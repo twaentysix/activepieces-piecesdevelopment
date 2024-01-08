@@ -1,7 +1,7 @@
-# pieces-datocms
+# pieces-contentful
 
 This library was generated with [Nx](https://nx.dev).
 
 ## Building
 
-Run `nx build pieces-datocms` to build the library.
+Run `nx build pieces-contentful` to build the library.

@@ -1,5 +1,6 @@
 
 import { createPiece, PieceAuth } from "@activepieces/pieces-framework";
+import { fetchTopStories } from './lib/actions/fetch-top-stories';
 
 export const hackerNews = createPiece({
   displayName: "Hacker-news",
@@ -7,6 +8,6 @@ export const hackerNews = createPiece({
   minimumSupportedRelease: '0.9.0',
   logoUrl: "https://cdn.activepieces.com/pieces/hacker-news.png",
   authors: [],
-  actions: [],
+  actions: [fetchTopStories],
   triggers: [],
 });

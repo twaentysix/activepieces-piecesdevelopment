@@ -1,12 +1,17 @@
-
-import { createPiece, PieceAuth } from "@activepieces/pieces-framework";
+import { createPiece } from '@activepieces/pieces-framework';
+import { DatocmsAuth } from './lib/common';
+import { DatocmsSearchRecordsAction, DatocmsGetRecordAction, DatocmsCreateRecordAction } from './lib/actions/records';
 
 export const datocms = createPiece({
-  displayName: "DatoCMS",
-  auth: PieceAuth.None(),
-  minimumSupportedRelease: '0.9.0',
-  logoUrl: "https://cdn.activepieces.com/pieces/datocms.png",
-  authors: ["Sami Salih"],
-  actions: [],
-  triggers: [],
+    displayName: 'DatoCMS',
+    auth: DatocmsAuth,
+    minimumSupportedRelease: '0.0.1',
+    logoUrl: 'https://cdn.activepieces.com/pieces/datocms.png',
+    authors: ['Sami Salih'],
+    actions: [
+        DatocmsSearchRecordsAction,
+        DatocmsGetRecordAction,
+        DatocmsCreateRecordAction
+    ],
+    triggers: [],
 });
