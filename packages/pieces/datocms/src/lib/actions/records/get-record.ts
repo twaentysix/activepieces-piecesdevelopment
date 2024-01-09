@@ -1,4 +1,4 @@
-import { Property, createAction } from "@activepieces/pieces-framework";
+/* import { Property, createAction } from "@activepieces/pieces-framework";
 import { DatocmsAuth, PropertyKeys, makeClient } from "../../common";
 
 export const DatocmsGetRecordAction = createAction({
@@ -32,4 +32,4 @@ export const DatocmsGetRecordAction = createAction({
 
         return await client.request(query, variables); // Verwenden Sie request, um die GraphQL-Abfrage zu senden
     }
-});
+}); */
