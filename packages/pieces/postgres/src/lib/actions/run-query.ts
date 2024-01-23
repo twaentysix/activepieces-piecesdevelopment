@@ -46,6 +46,7 @@ export const runQuery = createAction({
                 ssl: enable_ssl ? sslConf : undefined,
                 query_timeout: Number(query_timeout),
                 statement_timeout: Number(query_timeout),
+
                 application_name,
                 connectionTimeoutMillis: Number(connectionTimeoutMillis),
             })
